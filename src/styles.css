@@ -1,0 +1,319 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #eaf0ff;
+  background: #060b14;
+  line-height: 1.45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 20% -10%, rgba(87, 119, 255, 0.25), transparent 60%),
+    radial-gradient(900px 600px at 100% -20%, rgba(32, 201, 180, 0.18), transparent 55%),
+    linear-gradient(180deg, #0a101c 0%, #060b14 100%);
+  color: #eaf0ff;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 6rem;
+}
+
+.appHeader {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 0.75rem 0 1rem;
+  font-size: clamp(1.3rem, 2vw + 0.7rem, 2rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  backdrop-filter: blur(8px);
+}
+
+.content h2 {
+  margin: 0.75rem 0;
+  font-weight: 650;
+}
+
+.filterPanel,
+.panelCard,
+.concertRow,
+.modal,
+.entryForm {
+  background: rgba(16, 24, 38, 0.78);
+  border: 1px solid rgba(151, 174, 231, 0.14);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(2, 6, 15, 0.35);
+  backdrop-filter: blur(12px);
+}
+
+.filterPanel,
+.panelCard,
+.concertRow,
+.entryForm {
+  padding: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.filterPanel {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0.55rem;
+}
+
+.filterPanel > input {
+  grid-column: span 12;
+}
+
+.filterPanel > select {
+  grid-column: span 4;
+}
+
+.filterPanel input,
+.filterPanel select,
+.entryForm input,
+.entryForm select,
+.entryForm textarea {
+  width: 100%;
+  border: 1px solid rgba(148, 170, 230, 0.25);
+  background: rgba(10, 16, 26, 0.88);
+  border-radius: 12px;
+  padding: 0.55rem 0.65rem;
+  outline: none;
+}
+
+.filterPanel input:focus,
+.filterPanel select:focus,
+.entryForm input:focus,
+.entryForm select:focus,
+.entryForm textarea:focus {
+  border-color: rgba(98, 152, 255, 0.75);
+  box-shadow: 0 0 0 3px rgba(91, 147, 255, 0.16);
+}
+
+.inlineButtons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 1px solid rgba(144, 173, 237, 0.24);
+  background: linear-gradient(180deg, rgba(35, 57, 95, 0.95), rgba(24, 39, 69, 0.95));
+  border-radius: 12px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease, border-color 0.15s ease;
+}
+
+button:hover {
+  border-color: rgba(144, 173, 237, 0.42);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.linkButton {
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: #9fbeff;
+}
+
+.linkButton:hover {
+  opacity: 0.9;
+}
+
+.favoriteButton {
+  margin-left: auto;
+  min-width: 3rem;
+}
+
+.concertRow {
+  border-radius: 16px;
+}
+
+.rowTop {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.rowMeta {
+  margin: 0.45rem 0 0;
+  color: #b9c8e6;
+}
+
+.badge {
+  border-radius: 999px;
+  padding: 0.18rem 0.5rem;
+  font-size: 0.82rem;
+  color: #b4c5ee;
+  background: rgba(127, 170, 255, 0.16);
+}
+
+.festivalBox {
+  margin-top: 0.7rem;
+}
+
+.festivalExpanded {
+  margin-top: 0.55rem;
+  padding: 0.65rem;
+  border-radius: 14px;
+  border: 1px solid rgba(145, 173, 236, 0.2);
+  background: rgba(8, 15, 27, 0.55);
+}
+
+.muted {
+  color: #9eb1d6;
+}
+
+.cardList,
+.statsGrid {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.cardList {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.statsGrid {
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.entryForm {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.entryForm label {
+  color: #d5e0f8;
+  font-size: 0.95rem;
+}
+
+.entryForm textarea {
+  min-height: 95px;
+  resize: vertical;
+}
+
+.chipWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid rgba(129, 156, 211, 0.4);
+  border-radius: 999px;
+  padding: 0.25rem 0.58rem;
+  background: rgba(27, 42, 71, 0.8);
+}
+
+.chipFav {
+  cursor: pointer;
+}
+
+.tabNav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  background: rgba(6, 10, 18, 0.95);
+  border-top: 1px solid rgba(120, 150, 214, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+.tab {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  padding: 0.84rem 0.35rem;
+  color: #adc0e7;
+}
+
+.tab.active {
+  color: #fff;
+  background: linear-gradient(180deg, rgba(63, 97, 166, 0.35), rgba(37, 60, 102, 0.18));
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(3, 7, 14, 0.72);
+  padding: 1rem;
+  z-index: 40;
+}
+
+.modal {
+  width: min(760px, 100%);
+  max-height: 92vh;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.stack > * {
+  margin-top: 0;
+}
+
+.stubImage {
+  margin-top: 0.5rem;
+  width: min(100%, 380px);
+  border-radius: 14px;
+  border: 1px solid rgba(145, 173, 236, 0.35);
+}
+
+.groupSection {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 720px) {
+  .filterPanel > select {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width: 840px) {
+  .app {
+    padding-bottom: 1rem;
+  }
+
+  .tabNav {
+    position: sticky;
+    bottom: 0;
+    margin-top: 1rem;
+    border: 1px solid rgba(120, 150, 214, 0.25);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+}

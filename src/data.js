@@ -1,0 +1,153 @@
+export const BASE_CONCERTS = [
+  { id: 'base-1', artist: 'The National', opener: 'Soccer Mommy', venue: 'Beacon Theatre', city: 'New York', country: 'USA', date: '2018-02-14', setTime: '20:30', ticketPrice: 65, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Alex', 'Jordan'], notes: 'Valentine set with deep cuts.', type: 'concert' },
+  { id: 'base-2', artist: 'Phoebe Bridgers', opener: 'Muna', venue: 'The Anthem', city: 'Washington', country: 'USA', date: '2018-04-02', setTime: '21:00', ticketPrice: 48, festKey: '', favorite: 'none', pending: false, estimated: false, crew: ['Sam'], notes: 'First Phoebe headline show.', type: 'concert' },
+  { id: 'base-3', artist: 'Arctic Monkeys', opener: 'Fontaines D.C.', venue: 'United Center', city: 'Chicago', country: 'USA', date: '2018-06-21', setTime: '20:45', ticketPrice: 72, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Alex', 'Taylor'], notes: '', type: 'concert' },
+  { id: 'base-4', artist: 'Bon Iver', opener: 'Japanese House', venue: 'KettleHouse Amphitheater', city: 'Missoula', country: 'USA', date: '2018-08-11', setTime: '20:00', ticketPrice: 55, festKey: '', favorite: 'none', pending: false, estimated: false, crew: ['Morgan'], notes: '', type: 'concert' },
+  { id: 'base-5', artist: 'Kacey Musgraves', opener: 'Maggie Rogers', venue: 'Ryman Auditorium', city: 'Nashville', country: 'USA', date: '2018-10-09', setTime: '19:45', ticketPrice: 58, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Jordan'], notes: '', type: 'concert' },
+
+  { id: 'base-6', artist: 'Tame Impala', opener: 'Perfume Genius', venue: 'Madison Square Garden', city: 'New York', country: 'USA', date: '2019-03-10', setTime: '21:00', ticketPrice: 125, festKey: '', favorite: 'doublestar', pending: false, estimated: false, crew: ['Sam'], notes: 'Mind-bending lights.', type: 'concert' },
+  { id: 'base-7', artist: 'The 1975 / Phoebe Bridgers', opener: '', venue: 'Finsbury Park', city: 'London', country: 'UK', date: '2019-07-13', setTime: '18:15', ticketPrice: 0, festKey: 'citadel-2019', favorite: 'none', pending: false, estimated: false, crew: ['Alex', 'Sam'], notes: 'Festival crossover day.', type: 'festival' },
+  { id: 'base-8', artist: 'Mitski', opener: 'Jay Som', venue: 'Fox Theater', city: 'Oakland', country: 'USA', date: '2019-09-05', setTime: '20:20', ticketPrice: 43, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Taylor'], notes: '', type: 'concert' },
+  { id: 'base-9', artist: 'Vampire Weekend', opener: 'Soccer Mommy', venue: 'Hollywood Bowl', city: 'Los Angeles', country: 'USA', date: '2019-10-06', setTime: '20:30', ticketPrice: 66, festKey: '', favorite: 'none', pending: false, estimated: false, crew: ['Jordan'], notes: '', type: 'concert' },
+  { id: 'base-10', artist: 'Lizzo', opener: '', venue: 'Grant Park', city: 'Chicago', country: 'USA', date: '2019-08-01', setTime: '17:40', ticketPrice: 0, festKey: 'lolla-2019', favorite: 'star', pending: false, estimated: false, crew: ['Alex', 'Morgan'], notes: 'Lolla day one.', type: 'festival' },
+
+  { id: 'base-11', artist: 'The Strokes', opener: '', venue: 'Grant Park', city: 'Chicago', country: 'USA', date: '2019-08-02', setTime: '20:50', ticketPrice: 0, festKey: 'lolla-2019', favorite: 'star', pending: false, estimated: false, crew: ['Alex', 'Morgan'], notes: 'Lolla day two.', type: 'festival' },
+  { id: 'base-12', artist: 'Billie Eilish', opener: '', venue: 'Grant Park', city: 'Chicago', country: 'USA', date: '2019-08-03', setTime: '20:45', ticketPrice: 0, festKey: 'lolla-2019', favorite: 'none', pending: false, estimated: false, crew: ['Alex', 'Morgan'], notes: 'Lolla day three.', type: 'festival' },
+  { id: 'base-13', artist: 'Ariana Grande', opener: '', venue: 'Grant Park', city: 'Chicago', country: 'USA', date: '2019-08-04', setTime: '20:45', ticketPrice: 0, festKey: 'lolla-2019', favorite: 'none', pending: false, estimated: false, crew: ['Alex', 'Morgan'], notes: 'Lolla finale.', type: 'festival' },
+  { id: 'base-14', artist: 'Rina Sawayama', opener: 'Empress Of', venue: 'Terminal 5', city: 'New York', country: 'USA', date: '2020-01-23', setTime: '21:10', ticketPrice: 39, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Taylor', 'Sam'], notes: '', type: 'concert' },
+  { id: 'base-15', artist: 'The Weeknd', opener: 'Sabrina Claudio', venue: 'Scotiabank Arena', city: 'Toronto', country: 'Canada', date: '2020-02-19', setTime: '20:45', ticketPrice: 110, festKey: '', favorite: 'none', pending: false, estimated: false, crew: ['Alex'], notes: '', type: 'concert' },
+
+  { id: 'base-16', artist: 'Dua Lipa', opener: 'Caroline Polachek', venue: 'Accor Arena', city: 'Paris', country: 'France', date: '2020-03-11', setTime: '21:00', ticketPrice: 82, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Jordan'], notes: '', type: 'concert' },
+  { id: 'base-17', artist: 'Lana Del Rey', opener: '', venue: 'Parc del Fòrum', city: 'Barcelona', country: 'Spain', date: '2021-06-03', setTime: '22:10', ticketPrice: 0, festKey: 'primavera-2021', favorite: 'star', pending: false, estimated: false, crew: ['Taylor'], notes: 'Primavera day one.', type: 'festival' },
+  { id: 'base-18', artist: 'The National / Phoebe Bridgers', opener: '', venue: 'Parc del Fòrum', city: 'Barcelona', country: 'Spain', date: '2021-06-04', setTime: '21:50', ticketPrice: 0, festKey: 'primavera-2021', favorite: 'doublestar', pending: false, estimated: false, crew: ['Taylor', 'Alex'], notes: 'Primavera day two.', type: 'festival' },
+  { id: 'base-19', artist: 'Tyler, The Creator', opener: '', venue: 'Parc del Fòrum', city: 'Barcelona', country: 'Spain', date: '2021-06-05', setTime: '23:00', ticketPrice: 0, festKey: 'primavera-2021', favorite: 'none', pending: false, estimated: false, crew: ['Taylor', 'Alex'], notes: 'Primavera finale.', type: 'festival' },
+  { id: 'base-20', artist: 'Bleachers', opener: 'Claud', venue: 'Mission Ballroom', city: 'Denver', country: 'USA', date: '2021-09-17', setTime: '20:40', ticketPrice: 52, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Morgan'], notes: '', type: 'concert' },
+
+  { id: 'base-21', artist: 'Maggie Rogers', opener: 'Del Water Gap', venue: 'Greek Theatre', city: 'Berkeley', country: 'USA', date: '2021-10-12', setTime: '20:15', ticketPrice: 57, festKey: '', favorite: 'none', pending: false, estimated: false, crew: ['Jordan', 'Sam'], notes: '', type: 'concert' },
+  { id: 'base-22', artist: 'Paramore', opener: 'Foals', venue: 'O2 Arena', city: 'London', country: 'UK', date: '2022-01-25', setTime: '20:50', ticketPrice: 76, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Alex'], notes: '', type: 'concert' },
+  { id: 'base-23', artist: 'Harry Styles', opener: 'Wet Leg', venue: 'Kia Forum', city: 'Inglewood', country: 'USA', date: '2022-03-02', setTime: '20:45', ticketPrice: 98, festKey: '', favorite: 'none', pending: false, estimated: false, crew: ['Taylor'], notes: '', type: 'concert' },
+  { id: 'base-24', artist: 'Lorde', opener: 'Mitski', venue: 'Radio City Music Hall', city: 'New York', country: 'USA', date: '2022-04-20', setTime: '20:00', ticketPrice: 79, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Jordan'], notes: '', type: 'concert' },
+  { id: 'base-25', artist: 'Rosalía', opener: 'Nathy Peluso', venue: 'Palau Sant Jordi', city: 'Barcelona', country: 'Spain', date: '2022-05-14', setTime: '21:20', ticketPrice: 75, festKey: '', favorite: 'doublestar', pending: false, estimated: false, crew: ['Alex', 'Morgan'], notes: '', type: 'concert' },
+
+  { id: 'base-26', artist: 'The Killers', opener: '', venue: 'Worthy Farm', city: 'Pilton', country: 'UK', date: '2022-06-24', setTime: '22:30', ticketPrice: 0, festKey: 'glasto-2022', favorite: 'star', pending: false, estimated: false, crew: ['Sam'], notes: 'Glastonbury Friday.', type: 'festival' },
+  { id: 'base-27', artist: 'Paul McCartney', opener: '', venue: 'Worthy Farm', city: 'Pilton', country: 'UK', date: '2022-06-25', setTime: '22:15', ticketPrice: 0, festKey: 'glasto-2022', favorite: 'doublestar', pending: false, estimated: false, crew: ['Sam'], notes: 'Glastonbury Saturday.', type: 'festival' },
+  { id: 'base-28', artist: 'Kendrick Lamar', opener: '', venue: 'Worthy Farm', city: 'Pilton', country: 'UK', date: '2022-06-26', setTime: '22:30', ticketPrice: 0, festKey: 'glasto-2022', favorite: 'star', pending: false, estimated: false, crew: ['Sam'], notes: 'Glastonbury Sunday.', type: 'festival' },
+  { id: 'base-29', artist: 'The Midnight', opener: 'Nightly', venue: 'Red Rocks Amphitheatre', city: 'Morrison', country: 'USA', date: '2022-09-14', setTime: '20:30', ticketPrice: 59, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Alex', 'Jordan'], notes: '', type: 'concert' },
+  { id: 'base-30', artist: 'SZA', opener: 'Ravyn Lenae', venue: 'United Center', city: 'Chicago', country: 'USA', date: '2022-12-09', setTime: '20:50', ticketPrice: 91, festKey: '', favorite: 'none', pending: false, estimated: false, crew: ['Taylor'], notes: '', type: 'concert' },
+
+  { id: 'base-31', artist: 'boygenius', opener: 'Clairo', venue: 'TD Garden', city: 'Boston', country: 'USA', date: '2023-03-20', setTime: '20:35', ticketPrice: 69, festKey: '', favorite: 'doublestar', pending: false, estimated: false, crew: ['Alex', 'Sam'], notes: '', type: 'concert' },
+  { id: 'base-32', artist: 'Odesza', opener: 'Ford.', venue: 'Climate Pledge Arena', city: 'Seattle', country: 'USA', date: '2023-05-05', setTime: '20:40', ticketPrice: 84, festKey: '', favorite: 'none', pending: false, estimated: false, crew: ['Jordan'], notes: '', type: 'concert' },
+  { id: 'base-33', artist: 'Fred again..', opener: '', venue: 'Parc del Fòrum', city: 'Barcelona', country: 'Spain', date: '2023-06-01', setTime: '22:00', ticketPrice: 0, festKey: 'primavera-2023', favorite: 'star', pending: false, estimated: false, crew: ['Taylor'], notes: 'Primavera day one.', type: 'festival' },
+  { id: 'base-34', artist: 'Blur', opener: '', venue: 'Parc del Fòrum', city: 'Barcelona', country: 'Spain', date: '2023-06-02', setTime: '23:10', ticketPrice: 0, festKey: 'primavera-2023', favorite: 'none', pending: false, estimated: false, crew: ['Taylor', 'Morgan'], notes: 'Primavera day two.', type: 'festival' },
+  { id: 'base-35', artist: 'Calvin Harris', opener: '', venue: 'Parc del Fòrum', city: 'Barcelona', country: 'Spain', date: '2023-06-03', setTime: '23:30', ticketPrice: 0, festKey: 'primavera-2023', favorite: 'none', pending: false, estimated: false, crew: ['Taylor', 'Morgan'], notes: 'Primavera finale.', type: 'festival' },
+
+  { id: 'base-36', artist: 'Noah Kahan', opener: 'Hozier', venue: 'Moody Center', city: 'Austin', country: 'USA', date: '2023-09-22', setTime: '20:10', ticketPrice: 61, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Sam'], notes: '', type: 'concert' },
+  { id: 'base-37', artist: 'Olivia Rodrigo', opener: 'Remi Wolf', venue: 'Chase Center', city: 'San Francisco', country: 'USA', date: '2024-03-09', setTime: '20:30', ticketPrice: 120, festKey: '', favorite: 'none', pending: false, estimated: false, crew: ['Alex', 'Jordan'], notes: '', type: 'concert' },
+  { id: 'base-38', artist: 'The National', opener: 'The Beths', venue: 'Brixton Academy', city: 'London', country: 'UK', date: '2024-04-12', setTime: '20:35', ticketPrice: 74, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Taylor'], notes: '', type: 'concert' },
+  { id: 'base-39', artist: 'Charli XCX', opener: 'Shygirl', venue: 'Ziggo Dome', city: 'Amsterdam', country: 'Netherlands', date: '2024-05-18', setTime: '21:05', ticketPrice: 70, festKey: '', favorite: 'none', pending: false, estimated: false, crew: ['Morgan'], notes: '', type: 'concert' },
+  { id: 'base-40', artist: 'Lana Del Rey', opener: 'Ethel Cain', venue: 'Parc del Fòrum', city: 'Barcelona', country: 'Spain', date: '2024-06-06', setTime: '22:20', ticketPrice: 0, festKey: 'primavera-2024', favorite: 'star', pending: false, estimated: false, crew: ['Taylor'], notes: 'Primavera day one.', type: 'festival' },
+
+  { id: 'base-41', artist: 'Pulp', opener: '', venue: 'Parc del Fòrum', city: 'Barcelona', country: 'Spain', date: '2024-06-07', setTime: '22:00', ticketPrice: 0, festKey: 'primavera-2024', favorite: 'star', pending: false, estimated: false, crew: ['Taylor'], notes: 'Primavera day two.', type: 'festival' },
+  { id: 'base-42', artist: 'SZA', opener: '', venue: 'Parc del Fòrum', city: 'Barcelona', country: 'Spain', date: '2024-06-08', setTime: '23:05', ticketPrice: 0, festKey: 'primavera-2024', favorite: 'none', pending: false, estimated: false, crew: ['Taylor', 'Alex'], notes: 'Primavera day three.', type: 'festival' },
+  { id: 'base-43', artist: 'The xx', opener: 'Romy', venue: 'AFAS Live', city: 'Amsterdam', country: 'Netherlands', date: '2024-09-19', setTime: '20:25', ticketPrice: 68, festKey: '', favorite: 'none', pending: false, estimated: false, crew: ['Jordan'], notes: '', type: 'concert' },
+  { id: 'base-44', artist: 'Coldplay', opener: 'H.E.R.', venue: 'Estadio Olímpico', city: 'Barcelona', country: 'Spain', date: '2024-10-03', setTime: '21:15', ticketPrice: 140, festKey: '', favorite: 'star', pending: false, estimated: false, crew: ['Alex'], notes: '', type: 'concert' },
+  { id: 'base-45', artist: 'The National / Boygenius', opener: '', venue: 'Allianz Parque', city: 'São Paulo', country: 'Brazil', date: '2024-11-23', setTime: '20:30', ticketPrice: 0, festKey: 'autumn-sound-2024', favorite: 'doublestar', pending: false, estimated: false, crew: ['Alex', 'Sam'], notes: 'Autumn Sound day one.', type: 'festival' },
+
+  { id: 'base-46', artist: 'Rosalía / Rauw Alejandro', opener: '', venue: 'Allianz Parque', city: 'São Paulo', country: 'Brazil', date: '2024-11-24', setTime: '21:00', ticketPrice: 0, festKey: 'autumn-sound-2024', favorite: 'star', pending: false, estimated: false, crew: ['Alex', 'Sam'], notes: 'Autumn Sound day two.', type: 'festival' },
+  { id: 'base-47', artist: 'Chappell Roan', opener: '', venue: 'Anthem', city: 'Washington', country: 'USA', date: '2027-04-25', setTime: '', ticketPrice: 88, festKey: '', favorite: 'none', pending: true, estimated: true, crew: ['Jordan'], notes: 'Ticket purchased, time not announced.', type: 'concert' },
+  { id: 'base-48', artist: 'M83', opener: 'Washed Out', venue: 'The Greek', city: 'Los Angeles', country: 'USA', date: '2026-05-15', setTime: '20:30', ticketPrice: 67, festKey: '', favorite: 'none', pending: true, estimated: false, crew: ['Taylor'], notes: '', type: 'concert' },
+  { id: 'base-49', artist: 'Kendrick Lamar', opener: 'Baby Keem', venue: 'Accor Arena', city: 'Paris', country: 'France', date: '2026-09-19', setTime: '21:00', ticketPrice: 102, festKey: '', favorite: 'star', pending: true, estimated: false, crew: ['Morgan'], notes: '', type: 'concert' },
+  { id: 'base-50', artist: 'Phoebe Bridgers / The National', opener: '', venue: 'Hyde Park', city: 'London', country: 'UK', date: '2026-07-12', setTime: '18:30', ticketPrice: 0, festKey: 'summer-fields-2026', favorite: 'star', pending: true, estimated: true, crew: ['Alex', 'Jordan'], notes: 'Projected lineup announcement.', type: 'festival' },
+];
+
+export const FESTIVALS = {
+  'lolla-2019': {
+    name: 'Lollapalooza 2019',
+    days: [
+      { label: 'Thu', artists: ['Lizzo', 'Hozier', 'Chevelle', 'King Princess'] },
+      { label: 'Fri', artists: ['The Strokes', 'Tame Impala', 'Janelle Monáe'] },
+      { label: 'Sat', artists: ['Billie Eilish', 'Twenty One Pilots', 'Lil Wayne'] },
+      { label: 'Sun', artists: ['Ariana Grande', 'Flume', 'Kacey Musgraves'] },
+    ],
+  },
+  'primavera-2021': {
+    name: 'Primavera Sound 2021',
+    days: [
+      { label: 'Day 1', artists: ['Lana Del Rey', 'King Krule', 'FKA twigs'] },
+      { label: 'Day 2', artists: ['The National', 'Phoebe Bridgers', 'Beach House'] },
+      { label: 'Day 3', artists: ['Tyler, The Creator', 'Jamie xx', 'Caribou'] },
+    ],
+  },
+  'glasto-2022': {
+    name: 'Glastonbury 2022',
+    days: [
+      { label: 'Fri', artists: ['The Killers', 'Sam Fender', 'Lorde'] },
+      { label: 'Sat', artists: ['Paul McCartney', 'Noel Gallagher', 'Haim'] },
+      { label: 'Sun', artists: ['Kendrick Lamar', 'Diana Ross', 'Pet Shop Boys'] },
+    ],
+  },
+  'primavera-2023': {
+    name: 'Primavera Sound 2023',
+    days: [
+      { label: 'Day 1', artists: ['Fred again..', 'New Order', 'Depeche Mode'] },
+      { label: 'Day 2', artists: ['Blur', 'Rosalía', 'St. Vincent'] },
+      { label: 'Day 3', artists: ['Calvin Harris', 'Halsey', 'Måneskin'] },
+    ],
+  },
+  'primavera-2024': {
+    name: 'Primavera Sound 2024',
+    days: [
+      { label: 'Day 1', artists: ['Lana Del Rey', 'Vampire Weekend', 'Troye Sivan'] },
+      { label: 'Day 2', artists: ['Pulp', 'The National', 'PJ Harvey'] },
+      { label: 'Day 3', artists: ['SZA', 'Charli XCX', 'Arca'] },
+    ],
+  },
+  'autumn-sound-2024': {
+    name: 'Autumn Sound 2024',
+    days: [
+      { label: 'Night 1', artists: ['The National', 'Boygenius', 'Arlo Parks'] },
+      { label: 'Night 2', artists: ['Rosalía', 'Rauw Alejandro', 'Nathy Peluso'] },
+    ],
+  },
+  'summer-fields-2026': {
+    name: 'Summer Fields 2026',
+    days: [
+      { label: 'Main Day', artists: ['Phoebe Bridgers', 'The National', 'Bon Iver', 'M83'] },
+    ],
+  },
+  'citadel-2019': {
+    name: 'Citadel Festival 2019',
+    days: [
+      { label: 'Sunday', artists: ['The 1975', 'Phoebe Bridgers', 'Pale Waves'] },
+    ],
+  },
+};
+
+export const ARTIST_ALIASES = {
+  'the national': 'The National',
+  national: 'The National',
+  'phoebe bridgers': 'Phoebe Bridgers',
+  boygenius: 'Phoebe Bridgers',
+  'fred again': 'Fred again..',
+  'fred again..': 'Fred again..',
+  'the 1975': 'The 1975',
+  'rosalia': 'Rosalía',
+};
+
+export const EMPTY_ENTRY = {
+  artist: '',
+  opener: '',
+  venue: '',
+  city: '',
+  country: '',
+  date: '',
+  setTime: '',
+  ticketPrice: '',
+  festKey: '',
+  favorite: 'none',
+  pending: false,
+  estimated: false,
+  crew: [],
+  notes: '',
+  type: 'concert',
+};
